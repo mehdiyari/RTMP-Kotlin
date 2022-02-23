@@ -1,0 +1,11 @@
+.*
+*.iml
+!.gitignore
+!.travis.yml
+
+.idea/*
+local.properties
+
+build/
+out/
+/gradle.properties
