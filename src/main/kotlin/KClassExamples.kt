@@ -3,7 +3,6 @@ import kotlin.reflect.KVisibility
 import kotlin.reflect.full.createInstance
 
 fun main() {
-
     // Create an instance from Person class with reflection
     val person = Person::class.createInstance()
     println("Person name is ${person.name}")
@@ -26,8 +25,6 @@ fun main() {
         println("Person class hasn't open modifier")
     }
 
-    println("----------------")
-
     printClassConstructors(Person::class)
 }
 
@@ -40,6 +37,5 @@ fun printClassConstructors(kClass: KClass<*>) {
         println("Visibility: ${constructor.visibility}")
         println("Annotations: ${constructor.annotations}")
         println("Parameters: ${constructor.parameters}")
-        println("----------------")
     }
 }
