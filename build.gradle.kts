@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.4.31"
+    kotlin("jvm") version "1.6.0"
 }
 
 group = "ir.mehdiyari"
@@ -11,4 +11,5 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation(kotlin("reflect"))
 }
